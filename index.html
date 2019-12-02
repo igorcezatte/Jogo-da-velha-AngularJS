@@ -1,0 +1,31 @@
+<html ng-app="jogoDaVelha">
+  <head>
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="lib/angular.min.js"></script>
+    <script src="gameController.js"></script>
+  </head>
+  <body ng-controller="gameController">
+    <div id="container">
+      <div id="info">
+        {{app}}
+        <h1 id="winner">
+          Vencedor:
+          <p><img ng-src="{{winner}}" /></p>
+          <button id="restart" ng-click="initGame()">Restart</button>
+        </h1>
+      </div>
+      <div id="winner"></div>
+      <div id="tab" ng-init="initGame()">
+        <div
+          class="house"
+          ng-repeat="field in fields"
+          ng-click="setValue(field)"
+        >
+          <img ng-src="{{field.img}}" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

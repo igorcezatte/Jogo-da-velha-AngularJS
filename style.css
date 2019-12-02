@@ -1,0 +1,25 @@
+#info {
+  float: left;
+}
+
+#winner {
+  text-align: center;
+}
+
+#restart {
+  width: 200px;
+  height: 50px;
+}
+
+#tab {
+  width: 906px;
+  margin: auto;
+}
+
+.house {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  float: left;
+  text-align: center;
+}
