@@ -1,3 +1,3 @@
 # Jogo-da-velha-AngularJS
 
-Aprendizados em AngularJS
+### Para executar o jogo basta abrir a página index.html
