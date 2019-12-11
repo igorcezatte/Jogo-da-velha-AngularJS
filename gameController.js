@@ -24,6 +24,8 @@ angular.module("jogoDaVelha").controller("gameController", function($scope) {
     c1 = $scope.fields[6];
     c2 = $scope.fields[7];
     c3 = $scope.fields[8];
+    
+    playTime = "x";
     endGame = false;
     $scope.winner = "img/initial.png";
   };
